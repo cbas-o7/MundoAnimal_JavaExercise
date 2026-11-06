@@ -5,7 +5,7 @@ import mx.com.animales.Perro;
 
 void main(String[] args) {
     //Animal animales [] = new Animal[3];
-    ArrayList<Animal> animales = new ArrayList<Animal>();
+    ArrayList<Animal> animales = new ArrayList<>();
 
     Vaca vaca1 = new Vaca("Manuel",12);
     Perro perro1 = new Perro("Andy",2);
