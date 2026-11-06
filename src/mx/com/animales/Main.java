@@ -1,13 +1,20 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import mx.com.animales.Animal;
+import mx.com.animales.Gato;
+import mx.com.animales.Vaca;
+import mx.com.animales.Perro;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+void main(String[] args) {
+    //Animal animales [] = new Animal[3];
+    ArrayList<Animal> animales = new ArrayList<Animal>();
+
+    Vaca vaca1 = new Vaca("Manuel",12);
+    Perro perro1 = new Perro("Andy",2);
+    Gato gato1 = new Gato("Jorge",6);
+    animales.add(vaca1);
+    animales.add(perro1);
+    animales.add(gato1);
+
+    for (Animal a : animales) {
+        System.out.printf("%s | %s | %s \n", a.mostrarInformacion(), a.hacerSonido(), a.moverse());
     }
 }
